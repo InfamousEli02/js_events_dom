@@ -36,7 +36,7 @@ buttonClick.addEventListener("click", function() {
 
 //RANDOM COLOR BACKGROUND EXERCISE!
 let changeButton = document.getElementById('randomColorBtn');
-let newColor = {1:'pink', 2:'orange', 3:'red', 4:'yellow', 5:'pink', 6:'orange', 
+let newColor = {1:'pink', 2:'orange', 3:'red', 4:'yellow', 5:'pink', 6:'white', 
     7:'red', 8:'blue', 9:'green', 10:'teal'};
     let changeColor = function(){
         let currentColor = Math.ceil(Math.random() * 10);
