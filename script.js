@@ -42,3 +42,9 @@ let newColor = {1:'pink', 2:'orange', 3:'red', 4:'yellow', 5:'pink', 6:'orange',
         console.log(newColor[currentColor]);
         screenBody.background = newColor[currentColor];
     }
+
+function changeBtnStyle(){
+    const btn = document.getElementById("coolBtn");
+
+    btn.classList.toggle("glow");
+}

@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .cool-btn{
+            background: linear-gradient(45deg, #ff6b6b, #556270);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .glow{
+            box-shadow: 0 0 15px rgba(255, 107, 107, 0.8);
+        }
+    </style>
 </head>
 <body>
     <p id="direction"></p>
     <p id="onLoad"></p>
     <button id="clickMe">Click me for something to happen</button>
+    <button id="coolBtn" onclick="changeBtnStyle()" class="cool-btn glow">Look at me!</button>
     <button onClick="changeColor()" id="randomColorBtn">Surprise color</button>
     <script src="script.js"></script>
 </body>
