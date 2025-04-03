@@ -15,7 +15,7 @@ document.addEventListener("keydown", function() {
     directionEl.innerText = `The key that was pressed was ${event.key}`;
 })
 
-//Click event exercise!
+//CLICK EVENT EXERCISE!
 
 let buttonClick = document.getElementById("clickMe");
 
@@ -33,6 +33,8 @@ buttonClick.addEventListener("click", function() {
 //     console.log('Hello!')
 // }
 })
+
+//RANDOM COLOR BACKGROUND EXERCISE!
 let changeButton = document.getElementById('randomColorBtn');
 let newColor = {1:'pink', 2:'orange', 3:'red', 4:'yellow', 5:'pink', 6:'orange', 
     7:'red', 8:'blue', 9:'green', 10:'teal'};
@@ -43,8 +45,24 @@ let newColor = {1:'pink', 2:'orange', 3:'red', 4:'yellow', 5:'pink', 6:'orange',
         screenBody.background = newColor[currentColor];
     }
 
+//classList toggle demonstration, makes button glow
 function changeBtnStyle(){
     const btn = document.getElementById("coolBtn");
 
     btn.classList.toggle("glow");
+}
+
+//DARK MODE EXERCISE!
+function changeModeBtn(){
+   const mBtn = document.getElementById("modeBtn");
+   const bodyMode = document.body;
+   
+   if (mBtn.innerText === "Dark Mode"){
+    bodyMode.classList.toggle("dark");
+    mBtn.innerText = "Light Mode";
+   } else {
+    bodyMode.classList.toggle("light");
+    mBtn.innerText = "Dark Mode";
+   }
+
 }

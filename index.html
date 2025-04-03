@@ -19,6 +19,16 @@
         .glow{
             box-shadow: 0 0 15px rgba(255, 107, 107, 0.8);
         }
+
+        .dark{
+            background-color: black;
+            color: white;
+        }
+
+        .light{
+            background-color: white;
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -27,6 +37,7 @@
     <button id="clickMe">Click me for something to happen</button>
     <button id="coolBtn" onclick="changeBtnStyle()" class="cool-btn glow">Look at me!</button>
     <button onClick="changeColor()" id="randomColorBtn">Surprise color</button>
+    <button onClick="changeModeBtn()" id="modeBtn">Dark Mode</button> 
     <script src="script.js"></script>
 </body>
 </html>
